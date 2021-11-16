@@ -23,6 +23,9 @@ function createNewList() {
     ul.removeChild(button.previousElementSibling);
     ul.removeChild(button);
   });
+  li.addEventListener('click', function () {
+    li.classList.toggle('done');
+  });
 }
 
 enter.addEventListener('click', function () {
